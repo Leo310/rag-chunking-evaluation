@@ -8,7 +8,7 @@ from langchain_core.documents import Document
 
 def load_documents(data_dir) -> List[Document]:
     documents: List[Document] = []
-    with open(data_dir + 'documents.jsonl', 'r') as jsonl_file:
+    with open(data_dir + 'langchain_documents.jsonl', 'r') as jsonl_file:
         for line in jsonl_file:
             data = json.loads(line)
             obj = Document(**data)
@@ -16,7 +16,7 @@ def load_documents(data_dir) -> List[Document]:
     return documents
 
 def save_documents(documents, data_dir):
-    with open(data_dir + 'documents.jsonl', 'w') as jsonl_file:
+    with open(data_dir + 'langchain_documents.jsonl', 'w') as jsonl_file:
         for document in documents:
             jsonl_file.write(json.dumps(document.dict()) + "\n")
 

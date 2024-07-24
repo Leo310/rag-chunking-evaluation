@@ -4,6 +4,7 @@ from math import log2
 
 class GoldenTestset(TypedDict):
     question: str
+    source: str
     ground_truth_chunks: Dict[str, float]  # chunk_id: score
     ground_truth_answer: str
 
@@ -21,16 +22,27 @@ def calculate_metrics(
     average_precision_sum = 0
     hit_count = 0
     dcg = 0
+    ground_truth_set = set(ground_truth_chunks)
     for k, retrieved_chunk in enumerate(retrieved_chunks[:K], 1):
-        if any(
-            ground_truth_chunk in retrieved_chunk
-            for ground_truth_chunk in ground_truth_chunks
-        ):  # using any because ground truth can be sub-chunk (fact in MultiHopRetrival) of retrieved chunk
+        # matched_chunk = None # doing it this way becasue ground truth can be sub-chunk (fact in MultiHopRetrival) of retrieved chunk
+        # for chunk in ground_truth_chunks:
+        #     if chunk in retrieved_chunk:
+        #         matched_chunk = chunk
+        #         break
+        # if matched_chunk:
+        #     hit_count += 1
+        #     average_precision_sum += hit_count / k
+
+        #     if ground_truth_relevancies is not None:
+        #         rel_k = ground_truth_relevancies[ground_truth_chunks.index(matched_chunk)]
+        #         dcg += rel_k / log2(1 + k)
+        if retrieved_chunk in ground_truth_set:
             hit_count += 1
             average_precision_sum += hit_count / k
-
             if ground_truth_relevancies is not None:
-                rel_k = ground_truth_relevancies[k]
+                rel_k = ground_truth_relevancies[
+                    ground_truth_chunks.index(retrieved_chunk)
+                ]
                 dcg += rel_k / log2(1 + k)
 
     precision = hit_count / K
