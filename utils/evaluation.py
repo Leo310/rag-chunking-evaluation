@@ -1,41 +1,19 @@
-from typing import Dict, List, TypedDict
+from typing import Dict, List
 from math import log2
-
-
-class GoldenTestset(TypedDict):
-    question: str
-    source: str
-    ground_truth_chunks: Dict[str, float]  # chunk_id: score
-    ground_truth_answer: str
 
 
 def calculate_metrics(
     retrieved_chunks: List[str],
     ground_truth_chunks: List[str],
     ground_truth_relevancies: List[float] = None,
-    K=10,
 ):
-    K = min(K, len(retrieved_chunks))
-    if K == 0:
-        return {"precision": 0, "recall": 0, "ap": 0, "ndcg": 0}
+    K = len(retrieved_chunks)
 
     average_precision_sum = 0
     hit_count = 0
     dcg = 0
     ground_truth_set = set(ground_truth_chunks)
     for k, retrieved_chunk in enumerate(retrieved_chunks[:K], 1):
-        # matched_chunk = None # doing it this way becasue ground truth can be sub-chunk (fact in MultiHopRetrival) of retrieved chunk
-        # for chunk in ground_truth_chunks:
-        #     if chunk in retrieved_chunk:
-        #         matched_chunk = chunk
-        #         break
-        # if matched_chunk:
-        #     hit_count += 1
-        #     average_precision_sum += hit_count / k
-
-        #     if ground_truth_relevancies is not None:
-        #         rel_k = ground_truth_relevancies[ground_truth_chunks.index(matched_chunk)]
-        #         dcg += rel_k / log2(1 + k)
         if retrieved_chunk in ground_truth_set:
             hit_count += 1
             average_precision_sum += hit_count / k
