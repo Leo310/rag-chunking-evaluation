@@ -3,7 +3,7 @@ import json
 from pathlib import Path
 from typing import Dict, List
 from langchain_core.documents import Document
-from .evaluation import GoldenTestset
+from .evaluation import Testset
 
 
 def load_documents(data_dir) -> List[Document]:
@@ -45,15 +45,15 @@ def save_chunks(split_chunks, data_dir):
 
 
 def load_datasets(data_dir) -> Dict[str, List[Document]]:
-    datasets: Dict[str, List[GoldenTestset]] = {}
-    for file_name in os.listdir(data_dir + "testsets/"):
+    datasets: Dict[str, List[Testset]] = {}
+    for file_name in os.listdir(data_dir + "datasets/"):
         if file_name.endswith(".json"):
-            with open(f"{data_dir}testsets/{file_name}", "r") as json_file:
+            with open(f"{data_dir}datasets/{file_name}", "r") as json_file:
                 experiment_name = Path(file_name).stem
                 datasets[experiment_name] = []
                 data = json.load(json_file)
                 for testset in data:
-                    obj = GoldenTestset(**testset)
+                    obj = Testset(**testset)
                     datasets[experiment_name].append(obj)
 
     return datasets

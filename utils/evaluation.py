@@ -1,5 +1,13 @@
-from typing import Dict, List
+from typing import Dict, List, TypedDict
 from math import log2
+
+
+class Testset(TypedDict):
+    question: str
+    source: str
+    type: str
+    ground_truth_chunks: Dict[str, float]  # chunk_id: score
+    ground_truth_answer: str
 
 
 def calculate_metrics(
