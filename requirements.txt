@@ -1,0 +1,17 @@
+langchain
+langsmith
+langchainhub
+langchain_benchmarks
+chromadb
+openai
+huggingface
+pandas
+langchain_experimental
+sentence_transformers
+pyarrow
+anthropic
+tiktoken
+nest_asyncio
+python-dotenv
+tqdm
+ragas

@@ -3,7 +3,7 @@ import json
 from pathlib import Path
 from typing import Dict, List
 from langchain_core.documents import Document
-from .evaluation import Testset
+from .metrics import Testset
 
 
 def load_documents(data_dir) -> List[Document]:
