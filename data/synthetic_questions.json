@@ -1,102 +1,122 @@
 [
   {
-    "question": "In what ways does the Scrum framework emphasize the importance of team dynamics during the daily meetings, and how does this relate to the overall goals of the Scrum methodology?",
-    "type": "Conceptual",
+    "question": "What is the maximum duration of a sprint in the Scrum framework as mentioned in the document?",
+    "type": "detailed",
     "source": "my_benchmark/documents/scrum.md"
   },
   {
-    "question": "Compare and contrast the roles and responsibilities of the Scrum Master and the Product Owner in the context of the refinement meetings. How do their functions contribute to the success of the sprint planning process?",
-    "type": "Analytical",
+    "question": "What are the five phases of the sprint retrospective meeting, and how do they contribute to the team's improvement process?",
+    "type": "broad",
     "source": "my_benchmark/documents/scrum.md"
   },
   {
-    "question": "What are the implications of not having a clearly defined sprint goal, as mentioned in the author's personal experience with Scrum, and how might this affect the outcomes of the sprint?",
-    "type": "Inference",
+    "question": "Who is responsible for preparing the refinement document template before the refinement meetings?",
+    "type": "detailed",
     "source": "my_benchmark/documents/scrum.md"
   },
   {
-    "question": "How does the Definition of Ready (DoR) serve to enhance the efficiency of the refinement meetings, and what specific criteria must be met for a task to be considered ready for inclusion in a sprint?",
-    "type": "Fact-based",
+    "question": "Explain the roles and responsibilities of the Product Owner in the Scrum framework, including how they interact with the Scrum Master and the development team.",
+    "type": "broad",
     "source": "my_benchmark/documents/scrum.md"
   },
   {
-    "question": "Synthesize the information regarding the retrospective meetings and their goals. How do these meetings facilitate continuous improvement within the Scrum team, and what specific phases are involved in this process?",
-    "type": "Synthesis",
-    "source": "my_benchmark/documents/scrum.md"
-  },
-  {
-    "question": "What are the key factors that contribute to employees feeling unsafe in providing direct feedback, and how do these factors interrelate to create a culture of silence within an organization?",
-    "type": "Analytical",
+    "question": "What date was the document titled 'Anonymous Feedback' published?",
+    "type": "detailed",
     "source": "my_benchmark/documents/anonymous_feedback.md"
   },
   {
-    "question": "In what ways does anonymous feedback serve as a mechanism for employees to build trust within the organization, and what specific examples from the document illustrate this process?",
-    "type": "Conceptual",
+    "question": "What are the key reasons employees may fear giving direct feedback in the workplace, and how does anonymous feedback address these fears?",
+    "type": "broad",
     "source": "my_benchmark/documents/anonymous_feedback.md"
   },
   {
-    "question": "Compare and contrast the pros and cons of anonymous feedback as outlined in the document. How might these advantages and disadvantages impact the overall effectiveness of feedback mechanisms in a workplace?",
-    "type": "Analytical",
+    "question": "According to the document, what percentage of business owners described their organization as very transparent, and what percentage of employees agreed with this statement?",
+    "type": "detailed",
     "source": "my_benchmark/documents/anonymous_feedback.md"
   },
   {
-    "question": "How does the author suggest organizations can effectively act on the anonymous feedback received, and what steps are emphasized to ensure that the feedback leads to meaningful change?",
-    "type": "Application",
+    "question": "Discuss the pros and cons of anonymous feedback as outlined in the document, and explain how these factors influence the effectiveness of feedback mechanisms in organizations.",
+    "type": "broad",
     "source": "my_benchmark/documents/anonymous_feedback.md"
   },
   {
-    "question": "What implications does the document suggest regarding the relationship between anonymity in feedback and the potential for hostility in workplace dynamics? Provide reasoning based on the text.",
-    "type": "Inference",
-    "source": "my_benchmark/documents/anonymous_feedback.md"
-  },
-  {
-    "question": "What are the key obstacles faced by apprentices in the mentoring process, and how can a mentor assist in overcoming these challenges? Provide specific examples from the document.",
-    "type": "Analytical",
+    "question": "What are the specific obstacles that apprentices commonly face in their early steps of learning as outlined in the document?",
+    "type": "detailed",
     "source": "my_benchmark/documents/mentoring.md"
   },
   {
-    "question": "Discuss the principles of care, equality, and transparency in mentoring as outlined in the document. How do these principles interrelate to create a healthy mentoring relationship?",
-    "type": "Conceptual",
+    "question": "How do the principles of care, equality, and transparency contribute to a healthy mentoring relationship, and what specific roles do both mentors and apprentices play in maintaining these principles?",
+    "type": "broad",
     "source": "my_benchmark/documents/mentoring.md"
   },
   {
-    "question": "In what ways might a mentor's obstacles impact the mentoring relationship, and what strategies can be employed to mitigate these obstacles? Cite specific points from the document.",
-    "type": "Application",
+    "question": "According to the document, what are the three main principles that underpin a successful mentorship experience?",
+    "type": "detailed",
     "source": "my_benchmark/documents/mentoring.md"
   },
   {
-    "question": "Compare and contrast the roles and responsibilities of both the mentor and the apprentice as described in the document. How do these roles contribute to the overall success of the mentoring process?",
-    "type": "Synthesis",
+    "question": "Discuss the roles of both mentors and apprentices in the context of task management and roadmap definition as described in the document, and explain how these roles interact to overcome obstacles in the mentoring process.",
+    "type": "broad",
     "source": "my_benchmark/documents/mentoring.md"
   },
   {
-    "question": "How does the author suggest that mentors should approach the task of defining and maintaining a roadmap for apprentices? What underlying goals should be considered, and why are they important?",
-    "type": "Fact-based",
-    "source": "my_benchmark/documents/mentoring.md"
-  },
-  {
-    "question": "How does the concept of identity-focused changes differ from outcome-focused changes in the context of habit formation, and what implications does this have for long-term habit maintenance?",
-    "type": "Conceptual",
+    "question": "What percentage of daily behaviors are performed out of habit according to the 2002 daily experience study mentioned in the document?",
+    "type": "detailed",
     "source": "my_benchmark/documents/habit_management.md"
   },
   {
-    "question": "In the process of habit formation, what are the four stages outlined, and how does each stage contribute to the likelihood of a behavior becoming a habit?",
-    "type": "Fact-based",
+    "question": "What are the four stages involved in the process of building a habit from a behavior as outlined in the document?",
+    "type": "broad",
     "source": "my_benchmark/documents/habit_management.md"
   },
   {
-    "question": "Analyze the relationship between habit cues and the environment as discussed in the document. How can manipulating environmental cues facilitate the formation of new habits?",
-    "type": "Analytical",
+    "question": "In the habit management workflow, what are the two subdivisions under 'Habits being implemented'?",
+    "type": "detailed",
     "source": "my_benchmark/documents/habit_management.md"
   },
   {
-    "question": "Consider a scenario where an individual is trying to develop a new reading habit. Based on the strategies outlined in the document, what specific steps should they take to ensure the habit becomes automatic?",
-    "type": "Application",
+    "question": "How does the document suggest one can change their identity to facilitate habit change, and what are the three levels at which change can occur?",
+    "type": "broad",
     "source": "my_benchmark/documents/habit_management.md"
   },
   {
-    "question": "Synthesize the information regarding habit cravings and temptation bundling. How can these concepts be integrated to enhance motivation for a desired behavior?",
-    "type": "Synthesis",
-    "source": "my_benchmark/documents/habit_management.md"
+    "question": "What are the two main factors that determine when you want to sleep or stay awake, as described in the document?",
+    "type": "detailed",
+    "source": "my_benchmark/documents/sleep.md"
+  },
+  {
+    "question": "According to the document, what are the consequences of sleeping less than six or seven hours a night, and how do these consequences relate to overall health and well-being?",
+    "type": "broad",
+    "source": "my_benchmark/documents/sleep.md"
+  },
+  {
+    "question": "What is the average period of the circadian rhythm as mentioned in the document, and how does it adjust to stay in sync with the daylight sun cycle?",
+    "type": "detailed",
+    "source": "my_benchmark/documents/sleep.md"
+  },
+  {
+    "question": "How do the roles of NREM and REM sleep differ in terms of memory processing and neural connection management, and what implications does this have for sleep duration and quality?",
+    "type": "broad",
+    "source": "my_benchmark/documents/sleep.md"
+  },
+  {
+    "question": "What is the recommended frequency for replacing a toothbrush according to the document?",
+    "type": "detailed",
+    "source": "my_benchmark/documents/teeth.md"
+  },
+  {
+    "question": "What are the main arguments for and against rinsing your mouth after brushing your teeth as discussed in the document?",
+    "type": "broad",
+    "source": "my_benchmark/documents/teeth.md"
+  },
+  {
+    "question": "According to the document, what is the minimum amount of time that should be spent brushing teeth?",
+    "type": "detailed",
+    "source": "my_benchmark/documents/teeth.md"
+  },
+  {
+    "question": "How does the document describe the relationship between plaque control and the prevention of dental diseases, and what specific techniques are recommended for effective plaque removal?",
+    "type": "broad",
+    "source": "my_benchmark/documents/teeth.md"
   }
 ]
